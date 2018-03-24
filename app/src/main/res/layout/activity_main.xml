@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lopez00024614.problemadeamigos.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/Nivel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/persona1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P1"
+            android:textSize="10sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+        <View
+            android:id="@+id/mesa1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_margin="8dp"
+            android:layout_below="@id/persona1"
+            />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/mesa1"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/Karla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@id/mesa1"
+                android:text="Karla"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/sebas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@id/mesa1"
+                android:text="Sebas"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/hugo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hugo"
+            android:textSize="10sp"
+            android:layout_below="@id/mesa1"
+            android:gravity="center_horizontal"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/persona2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P2"
+            android:textSize="10sp"
+            android:layout_toRightOf="@id/mesa1"
+            android:layout_centerVertical="true"/>
+        <View
+            android:layout_width="5dp"
+            android:layout_height="50dp"
+            android:background="@color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Nivel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Nivel1">
+
+        <TextView
+            android:id="@+id/personaImaginaria1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="10sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"/>
+
+
+        <View
+            android:id="@+id/mesa2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_margin="8dp"
+            android:layout_below="@id/personaImaginaria1"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/mesa2">
+
+            <TextView
+                android:id="@+id/bolo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bolo1"
+                android:textSize="10sp"
+                android:layout_toLeftOf="@id/mesa1"
+                android:layout_margin="8dp"/>
+            <TextView
+                android:id="@+id/bolo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bolo2"
+                android:textSize="10sp"
+                android:layout_toLeftOf="@id/mesa1"
+                android:layout_margin="8dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/mesa2"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/bolo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@id/mesa1"
+                android:text="Bolo3"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/bolo4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@id/mesa1"
+                android:text="Bolo4"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toLeftOf="@id/mesa2"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/persona_imaginaria2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@id/mesa1"
+                android:text=""
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/pedro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_toLeftOf="@id/mesa1"
+                android:text="Pedro"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/Nivel3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Nivel2"
+        android:orientation="horizontal"
+        android:layout_margin="8dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/Amigo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amigo2"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+
+            <View
+                android:id="@+id/mesa3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="false"
+                android:layout_margin="8dp"
+                android:layout_below="@id/Amigo2"
+                />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@id/mesa3"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/douglas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_toLeftOf="@id/mesa3"
+                    android:text="Douglas"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/esposa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_toLeftOf="@id/mesa1"
+                    android:text="Esposa"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/amigo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amigo1"
+                android:textSize="10sp"
+                android:layout_below="@id/mesa3"
+                android:gravity="center_horizontal"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:id="@+id/amigo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amigo3"
+                android:textSize="10sp"
+                android:layout_toRightOf="@id/mesa3"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/personaImaginaria3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"/>
+
+
+            <View
+                android:id="@+id/mesa4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="false"
+                android:layout_margin="8dp"
+                android:layout_below="@id/personaImaginaria3"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_toRightOf="@id/mesa4">
+
+                <TextView
+                    android:id="@+id/carlos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Carlos"
+                    android:textSize="10sp"
+                    android:layout_toLeftOf="@id/mesa1"
+                    android:layout_margin="8dp"/>
+                <TextView
+                    android:id="@+id/obdu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Obdu"
+                    android:textSize="10sp"
+                    android:layout_toLeftOf="@id/mesa1"
+                    android:layout_margin="8dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/mesa4"
+                android:layout_centerHorizontal="true">
+
+                <TextView
+                    android:id="@+id/persona3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_toLeftOf="@id/mesa1"
+                    android:text="P3"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/persona4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_toLeftOf="@id/mesa1"
+                    android:text="P4"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toLeftOf="@id/mesa4"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/persona_imaginaria3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_toLeftOf="@id/mesa1"
+                    android:text=""
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/Sara"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_toLeftOf="@id/mesa1"
+                    android:text="Sara"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
